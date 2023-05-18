@@ -1,0 +1,76 @@
+$color-neutral-100: #f1f2f4;
+$color-neutral-000: #fff;
+$color-neutral-500: #767790;
+$color-black: #080a38;
+$color-neutral-600: #5a5c7a;
+$color-neutral-700: #3f4064;
+$color-neutral-200: #e0e0e6;
+ div{
+    direction: rtl;
+    font-size: 0.9rem;
+ }
+
+ @media (max-width: 768px){
+    header{
+        .px-4-md{
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+    }
+    nav{
+        .px-4-md{
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+    }
+ }
+
+
+ @media (min-width: 1024px){
+     header{
+        .ml-0-lg{
+            margin-left: 0;
+        }
+        .pl-2-lg{
+            padding-left: 8px;
+        }
+     }
+     nav{
+        .location{
+            padding-top: 0;
+            margin-top: 0;
+        }
+     }
+     .body{
+        .ai-stretch-lg{
+            align-items: stretch;
+        }
+        .flex-row-lg{
+            flex-direction: row;
+        }
+        .font-lg,span{
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 2.17;
+        }
+        .sidebar-lg{
+            order: -1;
+            min-width: 720px;
+            width: 300px;
+        }
+        .border-lg{
+            height: auto;
+            border: 1px solid $color-neutral-200;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .d-block-lg{
+            display: block;
+        }
+        .px-20-hg{
+            padding-inline:20px ;
+        }
+     }
+ }
+
+ 

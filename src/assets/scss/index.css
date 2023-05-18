@@ -1,0 +1,10 @@
+
+header {
+  position: fixed;
+}
+header div {
+  display: flex;
+}
+header div .logo {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */

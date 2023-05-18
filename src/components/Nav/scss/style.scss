@@ -1,0 +1,43 @@
+$color-neutral-100: #f1f2f4;
+$color-neutral-000: #fff;
+$color-neutral-500: #767790;
+$color-black: #080a38;
+$color-neutral-600: #5a5c7a;
+$color-neutral-700: #3f4064;
+$color-neutral-200: #e0e0e6;
+//  nav
+#nav{
+     display: flex;
+     margin-right: 1%;
+     border-bottom: 1px solid $color-neutral-200;
+     .link{
+        text-decoration: none;
+        color: $color-neutral-500;
+        justify-content: space-between;
+        font-size:medium;
+     }
+     .link:hover{
+        border-bottom: 2px solid red;
+     }
+     .nav{
+        width: 70%;
+        display: flex;
+        .nav-item{
+            padding-left: 1.75%;
+        }
+     }
+ }
+
+ 
+ 
+// mobile
+@media (max-width:575px) {
+   #nav{
+      .link{
+         font-size:0.5rem;
+      }
+      .nav{
+         width: 100%;
+      }
+  }
+}

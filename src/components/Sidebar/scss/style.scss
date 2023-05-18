@@ -1,0 +1,26 @@
+$color-neutral-500: #767790;
+.menu-sidebar{
+    border: 1px solid $color-neutral-500;
+    border-radius: 1%;
+    margin-left: 0;
+    width:20%;
+    margin-top: -123%;
+   
+}
+
+ // Medium
+ @media (max-width: 768px) {
+    .menu-sidebar{
+        display: none;
+       
+    }
+ }
+ 
+ 
+ // mobile
+ @media (max-width:575px) {
+    .menu-sidebar{
+        display: none;
+       
+    }
+ }

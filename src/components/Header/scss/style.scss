@@ -1,0 +1,110 @@
+$color-neutral-100: #f1f2f4;
+$color-neutral-500: #767790;
+$color-black: #080a38;
+$color-neutral-600: #5a5c7a;
+$color-neutral-700: #3f4064;
+$color-neutral-200: #e0e0e6;
+ // header
+ #header{
+    display: flex;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    background-color:#fff;
+    overflow: hidden;
+    width: 100%;
+    height: 75px;
+    padding-top: 2%;
+    z-index: +1;
+   
+    // search
+    #right{
+        display: flex;
+        .searchbox{
+            background-color: $color-neutral-100;
+            height: 45px;
+            width: 600px;
+            display: flex;
+            padding-right: 3%;
+            margin-right: 3%;
+            align-items: center;
+            color: $color-neutral-500;
+            .icon{
+                cursor: pointer;
+            }
+            input{
+                padding-right: 1.5%;
+                background-color: $color-neutral-100;
+                border: none;
+                width: 600px;
+            }
+        }
+        .logo{
+             width: 115px;
+             height: 30px;  
+        }
+    }
+    // login
+    .login{
+        margin-right: 40%;
+        display: flex;
+       .link{
+            text-decoration: none;
+            color: $color-black
+        }
+        .loginbox{
+            border: 1px solid $color-neutral-500;
+            border-radius: 5%;
+            width: 120px;
+            align-items: center;
+            padding-top: 7%;
+            height: 30px;
+            font-size: 1rem;
+            text-align: center;
+            .link{
+                font-size: 0.85rem;
+            }
+        }
+        .shop{
+          padding-top: 7%;
+          padding-right: 5%;
+          font-size: x-large;
+         
+        }
+    }
+     
+}
+
+ 
+ // mobile
+ @media (max-width:575px) {
+    
+        #header{
+           #right{
+            .searchbox{
+                height: 10px;
+                width: 10px;
+                 margin-top: 4%;
+            }
+            .logo{
+                width: 40px;
+                height: 35px;
+            }
+           }
+
+
+           .login{
+             padding-right: 25%;
+            display: flex;
+         .loginbox{
+                width: 20px;
+                height: 10px;
+            }
+            .shop{
+              font-size: small;
+             
+            }
+        }
+        }
+    }
+ 

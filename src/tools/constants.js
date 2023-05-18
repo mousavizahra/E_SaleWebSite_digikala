@@ -1,0 +1,1 @@
+export const BASE_URL='/v1/categories/mobile-phone/brands/apple/search/?page=1/data'

@@ -1,0 +1,263 @@
+$color-neutral-400: #9e9fb1;
+$color-neutral-500: #767790;
+$color-button-disable: #e0e0e6;
+$color-neutral:#f0f2f4;
+$color-neutral-700: #3f4064;
+$color-neutral-200: #e0e0e6;
+$color-neutral-100: #f1f2f4;
+.Footer{
+margin-top: 40%;
+    // Iphone
+.Iphone{
+    .container{
+        left: 23%;
+        width: 95%;
+        padding-right: 2%;
+        padding-top: 10%;
+        }
+        
+        .text{
+        display: inline;
+        width: 100%;
+    
+        }
+        
+        .read-or-hide{
+         cursor: pointer;
+         color: lightblue;
+        }
+    }
+
+    // logo
+    .logo{
+       
+        hr{
+            margin-top: 5%;
+            margin-bottom: 3%;
+        }
+        img{
+            height: 35px;
+            width: 130px;
+            float: right;
+            padding-right: 2%;
+        }
+        button{
+            float: left;
+            background-color:transparent;
+            color: $color-neutral-400;
+            border-color: $color-neutral-400;
+            border-radius: 12%;
+            box-sizing: border-box;
+            padding: 8px 12px;
+        }
+        p{
+            padding-top: 5%; 
+            padding-right: 2%;
+        }
+    }
+
+    // connect
+    .Connect{
+        padding-top: 4%;
+        margin-right: 10%;
+        display: flex;
+        div{
+            flex-grow: 1;
+            .link{
+                text-decoration: none;
+            }
+            p{
+                color: $color-neutral-500;
+            }
+        }
+    }
+
+    // about
+    .about{
+        padding-top: 5%;
+        display: flex;
+        div{
+            flex-grow: 1;
+        }
+        h2{
+            color: $color-neutral-700;
+        }
+        li{
+            list-style: none;
+            padding: 0.5% 0;
+            font-size: large;
+            color: $color-neutral-500;
+        }
+        #email{
+            p{
+                font-weight: bold;
+                font-size: larger;
+                color: $color-neutral-700;
+            }
+            li{
+                color: $color-neutral-500;
+            }
+            .social{
+                font-size: 30px;
+                color: $color-neutral-500;
+                .icon{
+                    padding-inline: 7%;
+                }
+            }
+            .email{
+                margin-left: 3%;
+                width: 50%;
+                height: 15%;
+                font-size: large;
+                padding: 2% 3%;
+                background-color: $color-neutral;
+                color: #cecfd4;
+                border:  none;
+                border-radius: 6%;
+            }
+        button{
+            padding: 2.5%;
+            font-size: large;
+            background-color: $color-button-disable;
+            color: #fff;
+            border:none;
+            border-radius: 10%;
+            }
+        }
+        
+    }
+
+    // digi-App
+    #digiApp{
+         .main{
+            background-color: rgb(60, 75, 109);
+            padding: 1% 0;
+            margin-inline: 1.25%;
+            margin-top: 5%;
+            border-radius: 8px;
+            align-items: center;
+          
+            .logo{
+                float: right; 
+                width: 20%;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    padding-left: 3.5%;
+                }
+                h2{
+                    color: #fff;
+                    margin-right: 2%;
+                }
+            }
+            .left{
+                display: flex;
+                padding-right: 32%;
+                .CoffeBazzar{
+                    padding-right: 2%;
+                }
+                .Myket{
+                    padding-inline: 2%;
+                }
+                .More{
+                    border:  1px solid red;
+                    padding-right: 2%;
+                }
+            }
+        }
+        
+    }
+
+    // End
+    #end{
+        margin-top: 5%;
+        .main{
+            p{
+            font-size: large;
+             padding-right: 13%;
+            }
+        }
+        .end{
+            background-color: $color-neutral-100;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin-top: 3%;
+           
+            div{
+                width: 12%;
+                height: 80px;
+                border-bottom: 1px solid $color-neutral-200;
+                border-right: 1px solid $color-neutral-200;
+                flex-direction:column ;
+                flex-grow: 1;
+                align-items: center;
+                display: flex;
+                 
+            }
+        }
+    }
+}
+
+
+
+
+// mobile
+@media (max-width:575px) {
+    // about
+    .about{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+      
+        div:nth-child(1), div:nth-child(2){
+            grid-column: span 6;
+        }
+        div:nth-child(3){
+             display: none;
+        }
+        #email{
+            grid-column: span 12;
+        }
+        
+    }
+
+     // digi-App
+     #digiApp{
+        display:none;
+   }
+
+    // End
+    #end{
+        margin-top: 5%;
+        .main{
+            p{
+            font-size: xx-small;
+             padding-right: 3%;
+            }
+        }
+        .end{
+           
+           
+            div{
+                img{
+                    width: 80%;
+                    padding-top: 80%;
+                    padding-right: 10%;
+                }
+            }
+        }
+    }
+
+}
+
+
+ // Medium
+ @media (max-width: 768px) {
+    // digi-App
+    #digiApp{
+        display: none;
+    }
+ }
+ 
